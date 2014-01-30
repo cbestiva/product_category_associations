@@ -1,0 +1,9 @@
+<h1><%= @category.name %></h1>
+<%= link_to "Edit", edit_category_path(@category), method: 'get' %> 
+<%= link_to "Delete", category_path(@category), method: 'delete' %>
+
+<h3>Products:</h3>
+
+<% @products.each do |p| %>
+	<li><%= link_to p.name, product_path(p) %></li>
+<% end %>

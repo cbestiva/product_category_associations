@@ -1,0 +1,15 @@
+<h4>Please Enter the Products Information</h4>
+
+<%= form_for @product do |f| %>
+	<%= f.text_field :name, placeholder: 'Name' %><br>
+	<%= f.text_field :price, placeholder: 'Price' %><br>
+	<%= f.text_area :description, placeholder: 'Description' %><br>
+
+	<h5>Select Categories:</h5>
+
+	<%= f.submit %>
+<% end %>
+
+
+
+

@@ -1,0 +1,18 @@
+<h2>List of Available Products</h2>
+
+<table>
+	<tr>
+		<td>Name</td>
+		<td>Price</td>
+		<td>Description</td>
+		<td>Categories</td>
+	</tr>
+	<%= @products.each do |p| %>
+	<tr>
+		<td><%= p.name %></td>
+		<td><%= p.price %></td>
+		<td><%= p.description %></td>
+		<td><%= p.categories %></td>
+	</tr>
+	<% end %>
+</table>
